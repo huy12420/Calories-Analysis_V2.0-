@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Food &amp; Calories</string>
+    <string name="username">Hi You</string>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string-array name="activate_select">
+        <item>1.1 Sedentary (no sports)</item>
+        <item>1.2 Have activities or work in office jobs</item>
+        <item>1.375 Less sports (1-2 times/week)</item>
+        <item>1.55 Play sports with moderate intensity (3-5 times/week)</item>
+    </string-array>
+    <string name="info">Let us know your information for a better calculation</string>
+</resources>

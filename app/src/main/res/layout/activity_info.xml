@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginVertical="21dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Personal Information"
+            android:textSize="28dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="15dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:scaleType="centerCrop"
+                android:id="@+id/setImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/user_ico"
+                android:onClick="loadImage" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:textColor="#9D9D9D"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/info" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter gender"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your height (cm)"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your weight (kg)"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+        <TextView
+            android:textColor="#9D9D9D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:hint="Select your daily Expenditure" />
+
+        <Spinner
+            android:id="@+id/activate_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/activate_select"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#9D9D9D" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_info_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:onClick="buttonInfoGoBack"
+        android:text="Accept" />
+
+</LinearLayout>
